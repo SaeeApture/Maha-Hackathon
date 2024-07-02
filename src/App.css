@@ -1,0 +1,28 @@
+body{
+  background-image: url('leafs.webp');
+  color: rgb(243, 243, 243);
+}
+
+.card_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
+
+.heading{
+  text-align: center;
+  font-family:rockwell extra bold;
+  color: #f8f8f8;
+  text-decoration: underline;
+  text-shadow: 25px;
+  font-size: xx-large;
+  font-style: bold;
+  color: rgb(175, 211, 175);
+}
+
+.footer{
+  text-align: center;
+  color: #bcae9e;
+}

@@ -1,0 +1,91 @@
+:root{
+    --primary-color: #446b11;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 270px;
+    height: 450px;
+    border: 3px solid var(--primary-color);
+    padding: 0.5rem 0.5rem;
+    margin: 15px 10px;
+    position: relative;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.card_title{
+    font-weight: 400;
+    text-align: center;
+}
+
+.card_title .card_price{
+    font-weight: bolder;
+}
+
+.image_container{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.image_container img{
+    width: 10%;
+    object-fit: cover;
+    justify-content: center;
+}
+
+
+.image-border {
+    border: 10px  rgb(189, 219, 200); 
+    border-style:ridge;
+    border-radius: 10px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card_price{
+    text-align: center;
+    display: contents;
+    justify-content: center;
+}
+ 
+.card_badge{
+    position:absolute;
+    top: 0;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    background-color: #446b11;
+    border-radius: 50px;
+    transform: translate(20px, -20px) scale(1);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid  #446b11 ;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    animation: scaleanimation 1s ease infinite;
+    opacity: 0.8;
+}
+
+@keyframes scaleanimation {
+    to{
+    transform: translate(20px, -20px) scale(1.05);
+    opacity: 1;
+    }
+}
+
+.card_badge--hidden {
+    display: none;
+}
